@@ -1,4 +1,5 @@
-# How setup a Beaglebone Black (Como configurar a Beaglebone Black e tweaks para desenvolvimento rápido)
+# How setup a Beaglebone Black and tweak to fast development
+# Como configurar a Beaglebone Black e tweaks para desenvolvimento rápido
 
 ## Install new system http://elinux.org/BeagleBoardDebian
 ### Download
@@ -60,16 +61,23 @@ nano ~/.ssh/authorized_keys
 
 ### BlackLib (Test code by tfmiranda)
 #### Downgrade Kernel
+```
 git clone https://github.com/beagleboard/bb.org-overlays
 cd ./bb.org-overlays
 ./dtc-overlay.sh
 ./install.sh
+```
 #### Download
+```
 git clone https://github.com/tfmiranda/BlackLib-Modificada
+```
 #### Commands
+```
 make
 make clean
-
+```
 ## Commands (Edit the files of the beagle as they were local)
 ### Mount Folder
+```
 nautilus sftp://root@name.local
+```
