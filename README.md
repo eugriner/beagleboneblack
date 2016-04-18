@@ -13,7 +13,7 @@ cd debian-8.3-console-armhf-2016-03-11
 sudo ./setup_sdcard.sh --probe-mmc
 sudo ./setup_sdcard.sh --mmc /dev/sdX --dtb beaglebone
 ```
-### Uncomment last line ()
+### uncomment last line of /boot/uEnv.txt, in your SDCard
 ```
 sudo nano uEnv.txt
 ```
